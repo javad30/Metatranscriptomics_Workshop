@@ -1,10 +1,22 @@
 # .readthedocs.yaml
 version: 2
 
+# Sphinx configuration
 sphinx:
   configuration: docs/source/conf.py
 
+# Python environment
 python:
-  version: 3.11
+  version: 3.12
   install:
     - requirements: docs/requirements.txt
+
+# Build system options
+build:
+  image: latest  # use the latest RTD build image
+  tools:
+    python: "3.12"
+
+# Optionally, you can specify artifacts (like HTML output)
+formats:
+  - html
