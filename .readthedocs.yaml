@@ -1,21 +1,10 @@
 # .readthedocs.yaml
 version: 2
 
-# Sphinx configuration
 sphinx:
   configuration: docs/source/conf.py
 
-# Python environment
 python:
-  version: 3.12
-  system_site_packages: false
+  version: 3.11
   install:
-    # Install your Python dependencies from requirements.txt
     - requirements: docs/requirements.txt
-
-# Optional: Clean build every time
-build:
-  image: latest
-  jobs:
-    post:
-      - echo "Building Metatranscriptomics Workshop docs..."
