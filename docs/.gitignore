@@ -1,0 +1,9 @@
+# Sphinx build folder
+docs/_build/
+
+# Python virtual environments
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
